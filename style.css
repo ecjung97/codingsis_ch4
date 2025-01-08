@@ -68,10 +68,13 @@ body {
     margin-right: 20px;
   }
   .searchInput {
-    width: inherit;
+    width: 80%;
     height: inherit;
     background: inherit;
     border: none;
+    &:focus {
+      outline: none;
+    }
   }
   .buttonContainer {
     margin-top: 10px;
