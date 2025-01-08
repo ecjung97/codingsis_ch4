@@ -72,6 +72,9 @@ body {
     height: inherit;
     background: inherit;
     border: none;
+    &:focus {
+      outline: none;
+    }
   }
   .buttonContainer {
     margin-top: 10px;
