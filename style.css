@@ -34,6 +34,11 @@ body {
     background: #0b57d0;
     color: #fff;
     font-size: 16px;
+    text-decoration: none;
+    &:hover {
+      border: 1px solid #0b57d0;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
@@ -63,15 +68,31 @@ body {
     color: #9aa0a6;
     margin-left: 20px;
   }
-  .micIcon {
+  .iconContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     color: #9aa0a6;
     margin-right: 20px;
+    cursor: pointer;
+    .micIcon {
+      width: 35px;
+    }
+    .lensIcon {
+      width: 30px;
+    }
   }
+
+  .keyboardIcon {
+    color: #9aa0a6;
+  }
+
   .searchInput {
     width: 80%;
-    height: inherit;
+    height: 90%;
     background: inherit;
     border: none;
+    margin-left: 20px;
     &:focus {
       outline: none;
     }
@@ -93,6 +114,9 @@ body {
       text-align: center;
       cursor: pointer;
       user-select: none;
+      &:hover {
+        border: 1px solid #ddd;
+      }
     }
   }
 }
@@ -129,8 +153,12 @@ a {
 }
 
 .bars {
-  padding: 10px;
-  width: 35px;
+  padding: 8px;
+  width: 45px;
+  height: 45px;
+  img {
+    width: 25px;
+  }
   &:hover {
     background: #ddd;
     border-radius: 50%;
